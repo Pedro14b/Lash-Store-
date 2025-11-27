@@ -1,0 +1,17 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*~
+
+# Arquivos do editor
+.vscode/
+.idea/
+
+# Arquivos que não devem ir pro repositório
+englishconnect_1_for_learners.pdf

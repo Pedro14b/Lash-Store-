@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LasheStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/lashstore.png">
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="logo">
+                <img src="imagens/lashstore.png" alt="Logo LasheStore" class="logo-img">
+                <h1>LasheStore</h1>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#carrinho" class="cart-link">🛒 Carrinho (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Cílios de Luxo para Você</h2>
+            <p>Transforme seu olhar com nossos produtos premium</p>
+            <a href="#produtos" class="btn-banner">Ver Produtos</a>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos-section">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            
+            <div class="categorias">
+                <h3>Categorias:</h3>
+                <ul class="categoria-list">
+                    <li>Cílios Postiços</li>
+                    <li>Colas e Adesivos</li>
+                    <li>Kits Completos</li>
+                    <li>Acessórios</li>
+                </ul>
+            </div>
+
+            <div class="produtos-grid">
+                <div class="produto-card" data-id="1">
+                    <div class="produto-img-container">
+                        <img src="imagens/false-eyelashes-on-transparent-background-file-png.png" alt="Cílios Clássicos" class="produto-img">
+                        <span class="badge">Mais Vendido</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Cílios Clássicos</h3>
+                        <p class="produto-desc">Cílios naturais e elegantes para o dia a dia</p>
+                        <ul class="produto-caracteristicas">
+                            <li>✓ Reutilizável</li>
+                            <li>✓ Confortável</li>
+                            <li>✓ Fácil aplicação</li>
+                        </ul>
+                        <p class="produto-preco">R$ 29,90</p>
+                        <button class="btn-add-cart" data-id="1" data-nome="Cílios Clássicos" data-preco="29.90">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="produto-card" data-id="2">
+                    <div class="produto-img-container">
+                        <img src="imagens/D_NQ_NP_963662-MLB43192674438_082020-O.png" alt="Cílios Volume" class="produto-img">
+                        <span class="badge novo">Novo</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Cílios Volume Dramático</h3>
+                        <p class="produto-desc">Para um olhar impactante e marcante</p>
+                        <ul class="produto-caracteristicas">
+                            <li>✓ Volume intenso</li>
+                            <li>✓ Longa duração</li>
+                            <li>✓ Preto profundo</li>
+                        </ul>
+                        <p class="produto-preco">R$ 39,90</p>
+                        <button class="btn-add-cart" data-id="2" data-nome="Cílios Volume Dramático" data-preco="39.90">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="produto-card" data-id="3">
+                    <div class="produto-img-container">
+                        <img src="imagens/8da4f4e1-2e74-4b4b-95f6-a1e1a61fa0f6.png" alt="Kit Completo" class="produto-img">
+                        <span class="badge desconto">-20%</span>
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Kit Completo Premium</h3>
+                        <p class="produto-desc">Tudo que você precisa em um só kit</p>
+                        <ul class="produto-caracteristicas">
+                            <li>✓ 3 pares de cílios</li>
+                            <li>✓ Cola profissional</li>
+                            <li>✓ Pinça de aplicação</li>
+                        </ul>
+                        <p class="produto-preco"><span class="preco-antigo">R$ 99,90</span> R$ 79,90</p>
+                        <button class="btn-add-cart" data-id="3" data-nome="Kit Completo Premium" data-preco="79.90">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <div class="produto-card" data-id="4">
+                    <div class="produto-img-container">
+                        <img src="imagens/cola para cilios.png.webp" alt="Cola para Cílios" class="produto-img">
+                    </div>
+                    <div class="produto-info">
+                        <h3 class="produto-nome">Cola para Cílios</h3>
+                        <p class="produto-desc">Adesivo profissional de longa duração</p>
+                        <ul class="produto-caracteristicas">
+                            <li>✓ Secagem rápida</li>
+                            <li>✓ Hipoalergênico</li>
+                            <li>✓ À prova d'água</li>
+                        </ul>
+                        <p class="produto-preco">R$ 19,90</p>
+                        <button class="btn-add-cart" data-id="4" data-nome="Cola para Cílios" data-preco="19.90">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparacao-section">
+        <div class="container">
+            <h2 class="section-title">Compare Nossos Produtos</h2>
+            <div class="table-responsive">
+                <table class="tabela-comparacao">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Tipo</th>
+                            <th>Duração</th>
+                            <th>Reutilizável</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cílios Clássicos</td>
+                            <td>Natural</td>
+                            <td>12 horas</td>
+                            <td>✓ Sim</td>
+                            <td>R$ 29,90</td>
+                        </tr>
+                        <tr>
+                            <td>Cílios Volume Dramático</td>
+                            <td>Volume</td>
+                            <td>15 horas</td>
+                            <td>✓ Sim</td>
+                            <td>R$ 39,90</td>
+                        </tr>
+                        <tr>
+                            <td>Kit Completo Premium</td>
+                            <td>Misto</td>
+                            <td>15 horas</td>
+                            <td>✓ Sim</td>
+                            <td>R$ 79,90</td>
+                        </tr>
+                        <tr>
+                            <td>Cola para Cílios</td>
+                            <td>Acessório</td>
+                            <td>24 horas</td>
+                            <td>✗ Não</td>
+                            <td>R$ 19,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRINHO DE COMPRAS -->
+    <section id="carrinho" class="carrinho-section">
+        <div class="container">
+            <h2 class="section-title">🛒 Meu Carrinho</h2>
+            
+            <div class="carrinho-content">
+                <div id="carrinho-vazio" class="carrinho-vazio">
+                    <p>Seu carrinho está vazio</p>
+                    <a href="#produtos" class="btn-voltar">Continuar Comprando</a>
+                </div>
+
+                <div id="carrinho-items" class="carrinho-items" style="display: none;">
+                    <table class="tabela-carrinho">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Quantidade</th>
+                                <th>Subtotal</th>
+                                <th>Remover</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrinho-tbody">
+                            <!-- Itens serão inseridos aqui via JavaScript -->
+                        </tbody>
+                    </table>
+
+                    <div class="carrinho-total">
+                        <h3>Total: R$ <span id="total-preco">0,00</span></h3>
+                        <button id="btn-finalizar" class="btn-finalizar">Finalizar Compra</button>
+                        <button id="btn-limpar" class="btn-limpar">Limpar Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contato" class="contato-section">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            
+            <form id="form-contato" class="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group">
+                    <label for="assunto">Assunto *</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione...</option>
+                        <option value="duvida">Dúvida sobre produto</option>
+                        <option value="pedido">Informações sobre pedido</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestao">Sugestão</option>
+                    </select>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Quero receber novidades e promoções por e-mail
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Sobre a Bella Lashes</h4>
+                    <p>Especialistas em cílios de alta qualidade desde 2020</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#carrinho">Carrinho</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Lashes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
